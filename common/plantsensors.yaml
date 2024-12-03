@@ -49,5 +49,4 @@ sensor:
     update_interval: ${update_interval}
     convert to illuminance
     filters:
-      - lambda: |-
-          return x * 1.0;
+      - multiply: 0.02
