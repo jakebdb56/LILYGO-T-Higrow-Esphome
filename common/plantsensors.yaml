@@ -41,7 +41,7 @@ sensor:
     i2c_id: bus_a
     name: '${devicename} BH1750 Illuminance'
     address: 0x23
-    unit_of_measurement: 'lx'
+    unit_of_measurement: 'lux'
     icon: 'mdi:white-balance-sunny'
     device_class: 'illuminance'
     state_class: 'measurement'
@@ -49,4 +49,4 @@ sensor:
     update_interval: ${update_interval}
     convert to illuminance
     filters:
-      - lambda: return x * 0.005
+      - lambda: return x * 0.005;
